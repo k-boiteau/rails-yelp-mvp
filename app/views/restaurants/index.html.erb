@@ -1,0 +1,22 @@
+<div class="header text-center">
+<h1>Our restaurants</h1>
+<span><%= link_to "add a restaurant", new_restaurant_path %></span>
+</div>
+
+<% @restaurants.each do |restaurant| %>
+  <div class="resto">
+      <div class="container">
+          <div class="row col-sm-10 col-sm-offset-1">
+              <h2 class = "primary-attributes"><%= restaurant.name %></h2>
+              <h3 class="category-list"> style:<%= restaurant.category %></h3>
+              <div class="secondary-attributes">
+                <p>Address: <%= restaurant.address%></p>
+                <p>phone-number: <%= restaurant.phone_number%></p>
+              </div>
+                <%= link_to "restaurant detail", restaurant_path(restaurant.id) %>
+                <%= link_to "add a review", new_restaurant_reviews_path(restaurant.id) %>
+          </div>
+      </div>
+  </div>
+  <% end %>
+

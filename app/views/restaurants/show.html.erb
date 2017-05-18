@@ -1,0 +1,37 @@
+<h1 class= text-center><%= @restaurant.name %></h1>
+<br>
+<br>
+<div class="resto">
+  <div class="container">
+      <div class="row">
+       <div class="col-sm-10 col-sm-offset-1">
+        <div class="primary-attributes">
+          <p class="category-list"> style:<%= @restaurant.category %></p>
+        </div>
+        <div class="secondary-attributes">
+            <p>Address: <%= @restaurant.address%></p>
+            <br>
+            <p>Numb: <%= @restaurant.phone_number%></p>
+        </div>
+       </div>
+      </div>
+      <% @restaurant.reviews.each do |review| %>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="third-attributes">
+              <p>Content:<%= review.content %></p>
+              <div class="i-stars i-stars--regular-<%= review.rating %>">
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <br>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <%= link_to "back", restaurants_path%>
+        </div>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,59 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.resto {
+  border: 1px solid grey;
+}
+
+.primary-attributes {
+  color: red;
+}
+
+.i-stars {
+  background: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_design_web/41341496d9db/assets/img/stars/stars.png) no-repeat;
+  background-size: 132px 560px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.i-stars--regular-5 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -402px;
+}
+
+.i-stars--regular-4 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -366px;
+}
+
+.i-stars--regular-3 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -330px;
+}
+
+.i-stars--regular-2 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -294px;
+}
+
+.i-stars--regular-1 {
+    width: 102px;
+    height: 18px;
+    background-position: 0 -258px;
+}
+
+.i-stars--regular-0 {
+    width: 102px;
+    height: 18px;
+    background-position: 0 -240px;
+}

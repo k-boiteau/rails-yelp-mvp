@@ -13,27 +13,32 @@ restaurants_attributes = [
   {
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
-    category:     "french"
+    category:     "french",
+    phone_number: "0142852733"
   },
   {
     name:         "La truffière",
     address:      "4 rue Blainville 75005 Paris",
-    category:     "chinese"
+    category:     "chinese",
+    phone_number: "0142852733"
   },
   {
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
-    category:     "italian"
+    category:     "italian",
+    phone_number: "0142852733"
   },
   {
     name:         "L'orillon bar",
     address:      "rue de l'orillon 75011 Paris",
-    category:     "french"
+    category:     "french",
+    phone_number: "0142852733"
   },
   {
     name:         "Le dauphiné",
     address:      "avenue de la Republique 75011 Paris",
-    category:     "japanese"
+    category:     "japanese",
+    phone_number: "0142852733"
   }
 
 ]
